@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Button_0"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="Clicked_0"
+        app:layout_constraintStart_toEndOf="@+id/Pos_Neg_Button"
+        app:layout_constraintTop_toTopOf="@+id/Pos_Neg_Button" />
+
+    <Button
+        android:id="@+id/Decimal_Button"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="."
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="Decimal_Clicked"
+        app:layout_constraintEnd_toStartOf="@+id/Equals_Button"
+        app:layout_constraintTop_toTopOf="@+id/Button_0" />
+
+    <Button
+        android:id="@+id/Equals_Button"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="="
+        android:textSize="24sp"
+        android:onClick="Equals_Clicked"
+        app:layout_constraintEnd_toEndOf="@+id/calcTextView"
+        app:layout_constraintTop_toTopOf="@+id/Decimal_Button" />
+
+    <Button
+        android:id="@+id/Add_Button"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="+"
+        android:textSize="24sp"
+        android:onClick="Add_Clicked"
+        app:layout_constraintEnd_toEndOf="@+id/calcTextView"
+        app:layout_constraintTop_toTopOf="@+id/Button_3" />
+
+    <Button
+        android:id="@+id/Button_1"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="3dp"
+        android:text="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="Clicked_1"
+        app:layout_constraintStart_toStartOf="@+id/calcTextView"
+        app:layout_constraintTop_toBottomOf="@+id/Button_4" />
+
+    <Button
+        android:id="@+id/Button_2"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="Clicked_2"
+        app:layout_constraintStart_toEndOf="@+id/Button_1"
+        app:layout_constraintTop_toTopOf="@+id/Button_1" />
+
+    <Button
+        android:id="@+id/Button_3"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="Clicked_3"
+        app:layout_constraintEnd_toStartOf="@+id/Add_Button"
+        app:layout_constraintTop_toTopOf="@+id/Button_2" />
+
+    <Button
+        android:id="@+id/Button_5"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="Clicked_5"
+        app:layout_constraintStart_toEndOf="@+id/Button_4"
+        app:layout_constraintTop_toTopOf="@+id/Button_4" />
+
+    <Button
+        android:id="@+id/Subtract_Button"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="-"
+        android:textSize="24sp"
+        android:onClick="Subtract_Clicked"
+        app:layout_constraintEnd_toEndOf="@+id/calcTextView"
+        app:layout_constraintTop_toTopOf="@+id/Button_6" />
+
+    <Button
+        android:id="@+id/Button_6"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="Clicked_6"
+        app:layout_constraintEnd_toStartOf="@+id/Subtract_Button"
+        app:layout_constraintTop_toTopOf="@+id/Button_5" />
+
+    <Button
+        android:id="@+id/Button_8"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="8"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="Clicked_8"
+        app:layout_constraintStart_toEndOf="@+id/Button_7"
+        app:layout_constraintTop_toTopOf="@+id/Button_7" />
+
+    <Button
+        android:id="@+id/Multiply_Button"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:textSize="24sp"
+        android:text="X"
+        android:onClick="Multiply_Clicked"
+        app:layout_constraintEnd_toEndOf="@+id/calcTextView"
+        app:layout_constraintTop_toTopOf="@+id/Button_9"
+        tools:text="X" />
+
+    <Button
+        android:id="@+id/Button_9"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="9"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="Clicked_9"
+        app:layout_constraintEnd_toStartOf="@+id/Multiply_Button"
+        app:layout_constraintTop_toTopOf="@+id/Button_8" />
+
+    <Button
+        android:id="@+id/C_Button"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="C"
+        android:textSize="24sp"
+        android:onClick="Clicked_Cancel"
+        app:layout_constraintStart_toEndOf="@+id/CE_button"
+        app:layout_constraintTop_toTopOf="@+id/CE_button" />
+
+    <Button
+        android:id="@+id/Divide_Button"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="/"
+        android:textSize="24sp"
+        android:onClick="Divide_Clicked"
+        app:layout_constraintEnd_toEndOf="@+id/calcTextView"
+        app:layout_constraintTop_toTopOf="@+id/BackSpace_Button" />
+
+    <Button
+        android:id="@+id/BackSpace_Button"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="BackSpace"
+        android:textSize="16sp"
+        android:onClick="BackSpace_Clicked"
+        app:layout_constraintEnd_toStartOf="@+id/Divide_Button"
+        app:layout_constraintTop_toTopOf="@+id/C_Button" />
+
+    <Button
+        android:id="@+id/Div_1_X_Button"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="1/x"
+        android:textSize="24sp"
+        android:onClick="One_By_X_Clicked"
+        app:layout_constraintEnd_toEndOf="@+id/calcTextView"
+        app:layout_constraintTop_toTopOf="@+id/Square_Button" />
+
+    <Button
+        android:id="@+id/Square_Button"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="x^2"
+        android:textSize="24sp"
+        android:onClick="Square_Clicked"
+        app:layout_constraintEnd_toStartOf="@+id/Div_1_X_Button"
+        app:layout_constraintTop_toTopOf="@+id/SquareRoot_Button" />
+
+    <Button
+        android:id="@+id/Pos_Neg_Button"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="3dp"
+        android:text="+ / -"
+        android:textSize="24sp"
+        android:onClick="Pos_Neg_Clicked"
+        app:layout_constraintStart_toStartOf="@+id/calcTextView"
+        app:layout_constraintTop_toBottomOf="@+id/Button_1" />
+
+    <Button
+        android:id="@+id/SquareRoot_Button"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Sqrt"
+        android:textSize="24sp"
+        android:onClick="Sqrt_Clicked"
+        app:layout_constraintStart_toEndOf="@+id/percentButton"
+        app:layout_constraintTop_toTopOf="@+id/percentButton" />
+
+    <Button
+        android:id="@+id/Button_4"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="3dp"
+        android:text="4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="Clicked_4"
+        app:layout_constraintStart_toStartOf="@+id/calcTextView"
+        app:layout_constraintTop_toBottomOf="@+id/Button_7" />
+
+    <Button
+        android:id="@+id/Button_7"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="3dp"
+        android:text="7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="Clicked_7"
+        app:layout_constraintStart_toStartOf="@+id/calcTextView"
+        app:layout_constraintTop_toBottomOf="@+id/CE_button" />
+
+    <Button
+        android:id="@+id/CE_button"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="3dp"
+        android:text="CE"
+        android:textSize="24sp"
+        android:onClick="Clicked_Cancel"
+        app:layout_constraintStart_toStartOf="@+id/calcTextView"
+        app:layout_constraintTop_toBottomOf="@+id/percentButton" />
+
+    <TextView
+        android:id="@+id/calcTextView"
+        android:layout_width="386dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center|end"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/percentButton"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:text="%"
+        android:textSize="24sp"
+        android:onClick="Percent_Clicked"
+        app:layout_constraintStart_toStartOf="@+id/calcTextView"
+        app:layout_constraintTop_toBottomOf="@+id/calcTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
